@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="130dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/viewHistoryID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/viewHistoryNPKPelapor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/viewHistoryJudul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Judul Pengaduan"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/viewHistoryLokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Lokasi Pengaduan"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/viewHistoryStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Status Pengaduan"
+                android:textStyle="bold"
+                android:textColor="@color/colorOrange"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/buttonViewDetailPengaduan"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorOrange"
+            android:padding="15dp"
+            android:src="@drawable/view"
+            tools:layout_editor_absoluteX="278dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/buttonCancelPengaduan"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/buttonViewDetailPengaduan"
+            android:layout_toLeftOf="@+id/buttonViewDetailPengaduan"
+            android:layout_toStartOf="@+id/buttonViewDetailPengaduan"
+            android:background="@color/colorPrimary"
+            android:padding="15dp"
+            android:src="@drawable/cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="281dp" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

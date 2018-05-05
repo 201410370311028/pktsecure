@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/viewReadID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/viewReadNamapelapor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/viewReadNPKPelapor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/viewReadNoPengaduan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Judul Pengaduan"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/viewReadJudul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Judul Pengaduan"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Kategori Pengaduan"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/viewReadKategoriAduan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="viewKategoriAduan"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Lokasi Kejadian"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/viewReadLokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Lokasi Pengaduan"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Nomor Telepon"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/viewReadNoTelepon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="viewNoTelepon"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Waktu dan Tanggal kejadian"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/viewReadWaktu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="WaktuKejadian"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Tindakan yang telah dilakukan"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/viewReadTindakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Tindakan Pertama"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/Keterangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Status Pengaduan"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/viewReadStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Status Pengaduan"
+                android:textStyle="bold"
+                android:textColor="@color/colorOrange"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="130dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+            <TextView
+                android:id="@+id/IDTindakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="id"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/judul_tindakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="Judul"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/lokasi_tindakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Lokasi" />
+
+            <TextView
+                android:id="@+id/notelepon_tindakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="notelepon"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/update"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            android:background="@color/colorOrange"
+            android:padding="15dp"
+            android:src="@drawable/view"
+            tools:layout_editor_absoluteX="278dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/call"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_toLeftOf="@+id/update"
+            android:layout_toStartOf="@+id/update"
+            android:background="@color/colorGreen"
+            android:padding="15dp"
+            android:src="@drawable/phone"
+            tools:layout_editor_absoluteX="278dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

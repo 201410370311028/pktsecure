@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar">
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_pkt"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/colorGreyTransparent"
+            />
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="@color/colorRedTransparent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="  Menu Petugas  >>  Penanganan   >>   Pihak"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.4"
+        android:paddingTop="80dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  nomor"
+            android:textStyle="bold"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  nomor"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <Button
+            android:onClick="petugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Petugas Lapangan"
+            android:background="@color/colorBlack"
+            android:textColor="@color/colorWhite"
+            />
+
+        <Button
+            android:onClick="korban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Korban"
+            android:background="@color/colorGreen"
+            android:textColor="@color/colorWhite"
+            />
+
+        <Button
+            android:onClick="pelaku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pelaku"
+            android:background="@color/colorBlue"
+            android:textColor="@color/colorWhite"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7">
+        <Button
+            android:id="@+id/done"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="done"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
